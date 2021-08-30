@@ -17,40 +17,72 @@ body{
 
 
 header{
-    padding:1rem;
+    padding:0.5vmin;
     display:flex;
     justify-content: flex-end;
     background-color: var(--secondary-color);
-}
-
-.search{
-    background-color: transparent;
-    border: 2px solid var(--primary-color);
-    padding:0.5rem 1rem;
-    border-radius: 50px;
-    font-size: 1rem;
-    color:#fff;
-    font-family: inherit;
-}
-
-.search:focus{
-    outline:0;
-    background-color: var(--primary-color);
-}
-
-.search::placeholder{
-    color: black;
 }
 
 main{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    font-size: 1vmin;
 }
 
+
+.best_movie {
+    width: 45vmin;
+    margin: 1vmin;
+    padding-right: 45vmin;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+    background-color: var(--secondary-color);
+    position:relative;
+    overflow: hidden;
+    border-radius: 5%;
+    
+}
+
+
+.best_movie img{
+    width:100%;
+}
+
+.best_movie-info{
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5vmin 1vmin 1vmin;
+    letter-spacing: 0.5px;
+}
+
+.best_movie-info h3{
+    margin-top: 0;
+}
+
+.best_movie-info span{
+    background-color: var(--primary-color);
+    padding: 0.25vmin 0.5vmin;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.best_movie-info span.green{
+    color:lightgreen;
+}
+
+.best_movie-info span.orange{
+    color:orange;
+}
+
+.best_movie-info span.red{
+    color:red;
+}
 .movie {
-    width: 300px;
-    margin: 1rem;
+    width: 15vmin;
+    margin: 1vmin;
     border-radius: 3px;
     box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
     background-color: var(--secondary-color);
@@ -68,7 +100,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 1rem 1rem;
+    padding: 0.5vmin 1vmin 1vmin;
     letter-spacing: 0.5px;
 }
 
@@ -78,7 +110,7 @@ main{
 
 .movie-info span{
     background-color: var(--primary-color);
-    padding: 0.25rem 0.5rem;
+    padding: 0.25vmin 0.5vmin;
     border-radius: 3px;
     font-weight: bold;
 }
@@ -95,21 +127,148 @@ main{
     color:red;
 }
 
-.overview{
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color: #fff;
-    padding: 1rem;
-    max-height: 100%;
-    transform:translateY(101%);
-    transition:transform 0.3s ease-in;
+.movie_action {
+    width:15vmin;
+    margin: 1vmin;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+    background-color: var(--secondary-color);
+    position:relative;
+    overflow: hidden;
 }
 
-.movie:hover .overview{
-    transform:translateY(0)
+
+.movie_action img{
+    width:100%;
 }
+
+.movie_action-info{
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5vmin 1vmin 1vmin;
+    letter-spacing: 0.5px;
+}
+
+.movie_action-info h3{
+    margin-top: 0;
+}
+
+.movie_action-info span{
+    background-color: var(--primary-color);
+    padding: 0.25vmin 0.5vmin;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie_action-info span.green{
+    color:lightgreen;
+}
+
+.movie_action-info span.orange{
+    color:orange;
+}
+
+.movie_action-info span.red{
+    color:red;
+}
+
+
+.movie_biography {
+    width:15vmin;
+    margin: 1vmin;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+    background-color: var(--secondary-color);
+    position:relative;
+    overflow: hidden;
+}
+
+
+.movie_biography img{
+    width:100%;
+}
+
+.movie_biography-info{
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5vmin 1vmin 1vmin;
+    letter-spacing: 0.5px;
+}
+
+.movie_biography-info h3{
+    margin-top: 0;
+}
+
+.movie_biography-info span{
+    background-color: var(--primary-color);
+    padding: 0.25vmin 0.5vmin;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie_biography-info span.green{
+    color:lightgreen;
+}
+
+.movie_biography-info span.orange{
+    color:orange;
+}
+
+.movie_biography-info span.red{
+    color:red;
+}
+
+.movie_animation {
+    width:15vmin;
+    margin: 1vmin;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+    background-color: var(--secondary-color);
+    position:relative;
+    overflow: hidden;
+}
+
+
+.movie_animation img{
+    width:100%;
+}
+
+.movie_animation-info{
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5vmin 1vmin 1vmin;
+    letter-spacing: 0.5px;
+}
+
+.movie_animation-info h3{
+    margin-top: 0;
+}
+
+.movie_animation-info span{
+    background-color: var(--primary-color);
+    padding: 0.25vmin 0.5vmin;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie_animation-info span.green{
+    color:lightgreen;
+}
+
+.movie_animation-info span.orange{
+    color:orange;
+}
+
+.movie_animation-info span.red{
+    color:red;
+}
+
 
 #tags{
     width:80%;
@@ -159,14 +318,14 @@ main{
     padding: 10px 20px;
     border-radius: 50%;
     border: 5px solid orange;
-    font-size: 20px;
+    font-size: 1vmin;
     font-weight: 600;
 }
 
 .know-more{
     background-color: orange;
     color:white;
-    font-size: 16px;
+    font-size: 1vmin;
     font-weight: bold;
     border:0;
     border-radius: 50px;
@@ -201,7 +360,7 @@ main{
   .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 1vmin;
     color: #818181;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
@@ -217,7 +376,7 @@ main{
     position: absolute;
     top: 20px;
     right: 45px;
-    font-size: 60px;
+    font-size: 1vmin;
   }
   
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -241,7 +400,7 @@ main{
 
   .arrow{
       position: absolute;
-      font-size: 40px;
+      font-size: 1vmin;
   }
 
   .arrow.left-arrow{
@@ -266,7 +425,7 @@ main{
     border-radius: 50%;
     border: 5px solid var(--secondary-color);
     color: white;
-    font-size: 20px;
+    font-size: 1vmin;
     font-weight: 600;
     margin: 5px;
 }
@@ -274,3 +433,50 @@ main{
 .dots .dot.active{
     border-color: orange;
 }
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    font-size: 2vmin;
+  }
+
+  #myBtn{
+    width: 45vmin;
+    border-radius: 3px;
+    background-color: grey;
+    border-radius: 5%;
+    overflow: hidden;
+    margin-left: 10%;
+}
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 1vmin;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
