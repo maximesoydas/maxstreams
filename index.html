@@ -1,130 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Maxstream</title>
+    <title>MaxStream</title>
+    <script src="https://kit.fontawesome.com/20ab21197a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,540;1,600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div>
-            <h1 style="color: white;font-size: 5vh; margin-left: -123.2vh; margin-top: 1vh; margin-bottom: 1vh;">MAXSTREAM </h1>
-
-        </div>
-    </header>
-
-    <!-- BEST MOVIE BY SCORE -->
-    <div>
-        <br><br>
-        <h2 style="color: white; margin-left: 45%; margin-top: -1vh; margin-bottom: -1vh;">THE BEST MOVIE</h2>
-        <br><br>
+    <div class="maxstream-logo">
+        <img src="./media/logo.svg" alt="">
     </div>
-        <main id="main0">
-            
-            <div class="best_movie">
-                <img src="https://images.unsplash.com/photo-1518173835740-f5d14111d76a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHX8fGVufDB8fHW%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=877&q=80" alt="Image_best">
-            
-                <div class="best_movie-info">
-                    <h3>Movie Title</h3>
-                    <span class="green">9.8</span>
-                </div>
-            </div>
-        </main>
-    <!-- BEST MOVIES BY SCORE -->
-    <div>
-        <h2 style="color: white; margin-left: 45%;">BEST MOVIES</h2>
-        <br>
-    </div>
-        <main id="main1">
-            
-            <div class="movie">
-                <img src="https://images.unsplash.com/photo-1518173835740-f5d14111d76a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHX8fGVufDB8fHW%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=877&q=80" alt="Image">
-               
-                <div class="movie-info">
-                    <h3>Movie Title</h3>
-                    <span class="green">9.8</span>
-                </div>
-            </div>
-
-            <div class="movie">
-                <img src="https://images.unsplash.com/photo-1518173835740-f5d14111d76a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHX8fGVufDB8fHW%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=877&q=80" alt="Image">
-                <div class="movie-info">
-                    <h3>Movie Title</h3>
-                    <span class="green">9.8</span>
-                </div>
-            </div>  
-
-        </main>
-        <br>
+    <div class="best-movie">
         <div>
-            <h2 style="color: white; margin-left: 45%;">ACTION MOVIES</h2>
-            <br>
+            <h1 class="movie-h1">Best Movie</h1>
         </div>
-            <main id="main2">
-                
-                <div class="movie_action">
-                    <img src="https://images.unsplash.com/photo-1518173835740-f5d14111d76a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHX8fGVufDB8fHW%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=877&q=80" alt="Image_action">
-                    <div class="movie_action-info">
-                        <h3>Movie Title</h3>
-                        <span class="green">9.8</span>
-                    </div>
-                </div>
+    </div>
+
+    <div>
+        <h1 class="score-h1"> Best Score Movies</h1>
+    <div class="carousel">
+        <div class="carouselbox">
+        </div>
+        <a class="switchLeft sliderButton" onclick="sliderScrollLeft()"><i class="fa" style="font-size: 4vh;">&#xf100;</i></a>
+        <a class="switchRight sliderButton" onclick="sliderScrollRight()"><i class="fa" style="font-size: 4vh;">&#xf101;</i></a>
+    </div>
+
+    </div>
     
-                <div class="movie_action">
-                    <img src="https://images.unsplash.com/photo-1518173835740-f5d14111d76a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHX8fGVufDB8fHW%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=877&q=80" alt="Image_action">
-                    <div class="movie_action-info">
-                        <h3>Movie Title</h3>
-                        <span class="green">9.8</span>
-                    </div>
-                </div>  
-            </main>
-            <br>
-            <div>
-                <h2 style="color: white; margin-left: 45%;">BIOGRAPHY MOVIES</h2>
-                <br>
-            </div>
-                <main id="main3">
-                    
-                    <div class="movie_biography">
-                        <img src="https://images.unsplash.com/photo-1518173835740-f5d14111d76a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHX8fGVufDB8fHW%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=877&q=80" alt="Image_biography">
-                        <div class="movie_biography-info">
-                            <h3>Movie Title</h3>
-                            <span class="green">9.8</span>
-                        </div>
-                    </div>
-        
-                    <div class="movie_biography">
-                        <img src="https://images.unsplash.com/photo-1518173835740-f5d14111d76a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHX8fGVufDB8fHW%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=877&q=80" alt="Image_biography">
-                        <div class="movie_biography-info">
-                            <h3>Movie Title</h3>
-                            <span class="green">9.8</span>
-                        </div>
-                    </div>              
-                </main>
-                <br>
-                <div>
-                    <h2 style="color: white; margin-left: 45%;">ANIMATION MOVIES</h2>
-                    <br>
-                </div>
-                    <main id="main4">
-                        
-                        <div class="movie_animation">
-                            <img src="https://images.unsplash.com/photo-1518173835740-f5d14111d76a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHX8fGVufDB8fHW%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=877&q=80" alt="Image_animation">
-                            <div class="movie_animation-info">
-                                <h3>Movie Title</h3>
-                                <span class="green">9.8</span>
-                            </div>
-                        </div>
-            
-                        <div class="movie_animation">
-                            <img src="https://images.unsplash.com/photo-1518173835740-f5d14111d76a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHX8fGVufDB8fHW%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=877&q=80" alt="Image_animation">
-                            <div class="movie_animation-info">
-                                <h3>Movie Title</h3>
-                                <span class="green">9.8</span>
-                            </div>
-                        </div>  
-                    </main>
-    <script src="script.js"></script>
+    <div>
+        <h1 class="action-h1">Action Movies</h1>
+    <div class="action-carousel">
+        <div class="action-carouselbox">
+        </div>
+        <a class="switchLeft sliderButton" onclick="ActionsliderScrollLeft()"><i class="fa" style="font-size: 4vh;">&#xf100;</i></a>
+        <a class="switchRight sliderButton" onclick="ActionsliderScrollRight()"><i class="fa" style="font-size: 4vh;">&#xf101;</i></a>
+    </div>
+    
+    </div>
+
+    <div>
+        <h1 class="animation-h1">Animation Movies</h1>
+    <div class="animation-carousel">
+        <div class="animation-carouselbox">
+        </div>
+        <a class="switchLeft sliderButton" onclick="AnimationsliderScrollLeft()"><i class="fa" style="font-size: 4vh;">&#xf100;</i></a>
+        <a class="switchRight sliderButton" onclick="AnimationsliderScrollRight()"><i class="fa" style="font-size: 4vh;">&#xf101;</i></a>
+    </div>
+    
+    </div>
+
+    <div>
+        <h1 class="drama-h1">Drama Movies</h1>
+    <div class="drama-carousel">
+        <div class="drama-carouselbox">
+        </div>
+        <a class="switchLeft sliderButton" onclick="DramasliderScrollLeft()"><i class="fa" style="font-size: 4vh;">&#xf100;</i></a>
+        <a class="switchRight sliderButton" onclick="DramasliderScrollRight()"><i class="fa" style="font-size: 4vh;">&#xf101;</i></a>
+    </div>
+    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>

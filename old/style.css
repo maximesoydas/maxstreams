@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:black;
+    --secondary-color: darkred;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+
+header{
+    display:flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+}
+
+main{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1vmin;
+}
+
+h2{
+    display:flex;
+    justify-content: left;
+    background-color: var(--secondary-color);
+}
+
+.best_movie {
+    width: 100%;    
+    text-align: center;
+}
+
+
+.best_movie img{
+    width:100%;
+}
+
+.best_movie-info{
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5vmin 1vmin 1vmin;
+    letter-spacing: 0.5px;
+}
+
+.best_movie-info h3{
+    margin-top: 0;
+}
+
+.best_movie-info span{
+    background-color: var(--primary-color);
+    padding: 0.25vmin 0.5vmin;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.best_movie-info span.green{
+    color:lightgreen;
+}
+
+.best_movie-info span.orange{
+    color:orange;
+}
+
+.best_movie-info span.red{
+    color:red;
+}
+.movie {
+    width: 15vmin;
+    margin: 1vmin;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+    background-color: var(--secondary-color);
+    position:relative;
+    overflow: hidden;
+    text-align: left;
+}
+
+
+.movie img{
+    width:100%;
+}
+
+.movie-info{
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5vmin 1vmin 1vmin;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3{
+    margin-top: 0;
+}
+
+.movie-info span{
+    background-color: var(--primary-color);
+    padding: 0.25vmin 0.5vmin;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green{
+    color:lightgreen;
+}
+
+.movie-info span.orange{
+    color:orange;
+}
+
+.movie-info span.red{
+    color:red;
+}
+
+.movie_action {
+    width:15vmin;
+    margin: 1vmin;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+    background-color: var(--secondary-color);
+    position:relative;
+    overflow: hidden;
+}
+
+
+.movie_action img{
+    width:100%;
+}
+
+.movie_action-info{
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5vmin 1vmin 1vmin;
+    letter-spacing: 0.5px;
+}
+
+.movie_action-info h3{
+    margin-top: 0;
+}
+
+.movie_action-info span{
+    background-color: var(--primary-color);
+    padding: 0.25vmin 0.5vmin;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie_action-info span.green{
+    color:lightgreen;
+}
+
+.movie_action-info span.orange{
+    color:orange;
+}
+
+.movie_action-info span.red{
+    color:red;
+}
+
+
+.movie_biography {
+    width:15vmin;
+    margin: 1vmin;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+    background-color: var(--secondary-color);
+    position:relative;
+    overflow: hidden;
+}
+
+
+.movie_biography img{
+    width:100%;
+}
+
+.movie_biography-info{
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5vmin 1vmin 1vmin;
+    letter-spacing: 0.5px;
+}
+
+.movie_biography-info h3{
+    margin-top: 0;
+}
+
+.movie_biography-info span{
+    background-color: var(--primary-color);
+    padding: 0.25vmin 0.5vmin;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie_biography-info span.green{
+    color:lightgreen;
+}
+
+.movie_biography-info span.orange{
+    color:orange;
+}
+
+.movie_biography-info span.red{
+    color:red;
+}
+
+.movie_animation {
+    width:15vmin;
+    margin: 1vmin;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+    background-color: var(--secondary-color);
+    position:relative;
+    overflow: hidden;
+}
+
+
+.movie_animation img{
+    width:100%;
+}
+
+.movie_animation-info{
+    color:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5vmin 1vmin 1vmin;
+    letter-spacing: 0.5px;
+}
+
+.movie_animation-info h3{
+    margin-top: 0;
+}
+
+.movie_animation-info span{
+    background-color: var(--primary-color);
+    padding: 0.25vmin 0.5vmin;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie_animation-info span.green{
+    color:lightgreen;
+}
+
+.movie_animation-info span.orange{
+    color:orange;
+}
+
+.movie_animation-info span.red{
+    color:red;
+}
+
+
+#tags{
+    width:80%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.tag{
+    color:white;
+    padding:10px 20px;
+    background-color: orange;
+    border-radius: 50px;
+    margin:5px;
+    display:inline-block;
+    cursor: pointer;
+}
+
+.tag.highlight{
+    background-color: red;
+}
+.no-results{
+    color:white;
+}
+
+.pagination{
+    display:flex;
+    margin:10px 30px;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+
+.page{
+    padding:20px;
+    cursor:pointer;
+}
+
+.page.disabled{
+    cursor:not-allowed;
+    color:grey;
+}
+
+.current{
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: 5px solid orange;
+    font-size: 1vmin;
+    font-weight: 600;
+}
+
+.know-more{
+    background-color: orange;
+    color:white;
+    font-size: 1vmin;
+    font-weight: bold;
+    border:0;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-top: 5px;
+}
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 10%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 1vmin;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 1vmin;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+
+  .embed.hide{
+      display: none;
+  }
+
+  .embed.show{
+      display: inline-block;
+  }
+
+  .arrow{
+      position: absolute;
+      font-size: 1vmin;
+  }
+
+  .arrow.left-arrow{
+      top:50%;
+      left:5%;
+      transform: translateY(-50%);
+  }
+
+  
+  .arrow.right-arrow{
+    top:50%;
+    transform: translateY(-50%);
+    right:5%;
+}
+
+.dots{
+    margin-top: 30px;
+}
+
+.dots .dot {
+    padding: 5px 15px;
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
+    color: white;
+    font-size: 1vmin;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.dots .dot.active{
+    border-color: orange;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    font-size: 2vmin;
+    text-align: center;
+  }
+
+
+
+.myBtn1{
+    text-align: center;
+    background: none;
+    background-size: 15vmin;
+    overflow: hidden;
+}
+
+
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 6vmin;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  * {box-sizing:border-box}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 10%;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+    left: 10%;
+    border-radius: 3px 0 0 3px;
+  }
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

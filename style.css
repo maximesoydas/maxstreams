@@ -1,482 +1,412 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
 
-*{
-    box-sizing: border-box;
-}
-
-:root{
-    --primary-color:black;
-    --secondary-color: darkred;
-}
-
-body{
-    background-color: var(--primary-color);
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-}
-
-
-header{
-    padding:0.5vmin;
-    display:flex;
-    justify-content: flex-end;
-    background-color: var(--secondary-color);
-}
-
-main{
-    display:flex;
+body {
+    height: 100vh;
+    width: 200vh;
+    background-color:  #4B191B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
-    font-size: 1vmin;
+    background-image: url('/background.svg');
+    background-repeat: no-repeat;
+    background-size: contain ;
 }
 
-
-.best_movie {
-    width: 45vmin;
-    margin: 1vmin;
-    padding-right: 45vmin;
-    border-radius: 3px;
-    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
-    background-color: var(--secondary-color);
-    position:relative;
-    overflow: hidden;
-    border-radius: 5%;
-    
-}
-
-
-.best_movie img{
-    width:100%;
-}
-
-.best_movie-info{
-    color:#eee;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5vmin 1vmin 1vmin;
-    letter-spacing: 0.5px;
-}
-
-.best_movie-info h3{
-    margin-top: 0;
-}
-
-.best_movie-info span{
-    background-color: var(--primary-color);
-    padding: 0.25vmin 0.5vmin;
-    border-radius: 3px;
-    font-weight: bold;
-}
-
-.best_movie-info span.green{
-    color:lightgreen;
-}
-
-.best_movie-info span.orange{
-    color:orange;
-}
-
-.best_movie-info span.red{
-    color:red;
-}
-.movie {
-    width: 15vmin;
-    margin: 1vmin;
-    border-radius: 3px;
-    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
-    background-color: var(--secondary-color);
-    position:relative;
-    overflow: hidden;
-}
-
-
-.movie img{
-    width:100%;
-}
-
-.movie-info{
-    color:#eee;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5vmin 1vmin 1vmin;
-    letter-spacing: 0.5px;
-}
-
-.movie-info h3{
-    margin-top: 0;
-}
-
-.movie-info span{
-    background-color: var(--primary-color);
-    padding: 0.25vmin 0.5vmin;
-    border-radius: 3px;
-    font-weight: bold;
-}
-
-.movie-info span.green{
-    color:lightgreen;
-}
-
-.movie-info span.orange{
-    color:orange;
-}
-
-.movie-info span.red{
-    color:red;
-}
-
-.movie_action {
-    width:15vmin;
-    margin: 1vmin;
-    border-radius: 3px;
-    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
-    background-color: var(--secondary-color);
-    position:relative;
-    overflow: hidden;
-}
-
-
-.movie_action img{
-    width:100%;
-}
-
-.movie_action-info{
-    color:#eee;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5vmin 1vmin 1vmin;
-    letter-spacing: 0.5px;
-}
-
-.movie_action-info h3{
-    margin-top: 0;
-}
-
-.movie_action-info span{
-    background-color: var(--primary-color);
-    padding: 0.25vmin 0.5vmin;
-    border-radius: 3px;
-    font-weight: bold;
-}
-
-.movie_action-info span.green{
-    color:lightgreen;
-}
-
-.movie_action-info span.orange{
-    color:orange;
-}
-
-.movie_action-info span.red{
-    color:red;
-}
-
-
-.movie_biography {
-    width:15vmin;
-    margin: 1vmin;
-    border-radius: 3px;
-    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
-    background-color: var(--secondary-color);
-    position:relative;
-    overflow: hidden;
-}
-
-
-.movie_biography img{
-    width:100%;
-}
-
-.movie_biography-info{
-    color:#eee;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5vmin 1vmin 1vmin;
-    letter-spacing: 0.5px;
-}
-
-.movie_biography-info h3{
-    margin-top: 0;
-}
-
-.movie_biography-info span{
-    background-color: var(--primary-color);
-    padding: 0.25vmin 0.5vmin;
-    border-radius: 3px;
-    font-weight: bold;
-}
-
-.movie_biography-info span.green{
-    color:lightgreen;
-}
-
-.movie_biography-info span.orange{
-    color:orange;
-}
-
-.movie_biography-info span.red{
-    color:red;
-}
-
-.movie_animation {
-    width:15vmin;
-    margin: 1vmin;
-    border-radius: 3px;
-    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
-    background-color: var(--secondary-color);
-    position:relative;
-    overflow: hidden;
-}
-
-
-.movie_animation img{
-    width:100%;
-}
-
-.movie_animation-info{
-    color:#eee;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5vmin 1vmin 1vmin;
-    letter-spacing: 0.5px;
-}
-
-.movie_animation-info h3{
-    margin-top: 0;
-}
-
-.movie_animation-info span{
-    background-color: var(--primary-color);
-    padding: 0.25vmin 0.5vmin;
-    border-radius: 3px;
-    font-weight: bold;
-}
-
-.movie_animation-info span.green{
-    color:lightgreen;
-}
-
-.movie_animation-info span.orange{
-    color:orange;
-}
-
-.movie_animation-info span.red{
-    color:red;
-}
-
-
-#tags{
-    width:80%;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto;
-}
-
-.tag{
-    color:white;
-    padding:10px 20px;
-    background-color: orange;
-    border-radius: 50px;
-    margin:5px;
-    display:inline-block;
-    cursor: pointer;
-}
-
-.tag.highlight{
-    background-color: red;
-}
-.no-results{
-    color:white;
-}
-
-.pagination{
-    display:flex;
-    margin:10px 30px;
-    align-items: center;
-    justify-content: center;
-    color:white;
-}
-
-.page{
-    padding:20px;
-    cursor:pointer;
-}
-
-.page.disabled{
-    cursor:not-allowed;
-    color:grey;
-}
-
-.current{
-    padding: 10px 20px;
-    border-radius: 50%;
-    border: 5px solid orange;
-    font-size: 1vmin;
-    font-weight: 600;
-}
-
-.know-more{
-    background-color: orange;
-    color:white;
-    font-size: 1vmin;
-    font-weight: bold;
-    border:0;
-    border-radius: 50px;
-    padding: 10px 20px;
-    margin-top: 5px;
-}
-/* The Overlay (background) */
-.overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-    height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
-  
-  /* Position the content inside the overlay */
-  .overlay-content {
-    position: relative;
-    top: 10%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-  }
-  
-  /* The navigation links inside the overlay */
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 1vmin;
-    color: #818181;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 1vmin;
-  }
-  
-  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
-  }
-
-
-  .embed.hide{
-      display: none;
-  }
-
-  .embed.show{
-      display: inline-block;
-  }
-
-  .arrow{
-      position: absolute;
-      font-size: 1vmin;
-  }
-
-  .arrow.left-arrow{
-      top:50%;
-      left:5%;
-      transform: translateY(-50%);
-  }
-
-  
-  .arrow.right-arrow{
-    top:50%;
-    transform: translateY(-50%);
-    right:5%;
-}
-
-.dots{
-    margin-top: 30px;
-}
-
-.dots .dot {
-    padding: 5px 15px;
-    border-radius: 50%;
-    border: 5px solid var(--secondary-color);
+h1{
+    font-size: 4vh;
     color: white;
-    font-size: 1vmin;
-    font-weight: 600;
-    margin: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: -1vh;
+    margin-right: 4vh;
+    margin-top: 7vh ;
+    margin-left: 40vh;
+}
+.movie-h1{    
+    font-size: 5.2vh;
+    margin-left: 41vh;
+    margin-right: 40.9vh;
+    padding: 4.49vh;
+    height: 4vh;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    background-color: black;
+    border-radius: 90% 90% 0% 0%;
+
+}
+.best-movie img{
+    width: 35vh;
+    height: 45vh;
+    margin-left: 41vh;
+
+}
+.best-movie img:hover{
+    transform: scale(1.1);
+    z-index: 5;
+}
+.score-h1{   
+    font-size: 3vh;
+    margin-left: 40vh;
+    margin-right: 38.8vh;
+    padding: 1vh;
+    height: 4vh;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+    font-style: italic;
+
+}
+.maxstream-logo{
+    margin-top: 2vh;
+    height: 15vw;
+    width: 100%;
+    text-align: center;
 }
 
-.dots .dot.active{
-    border-color: orange;
+.maxstream-logo img{
+    height: 100%;
 }
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    font-size: 2vmin;
-  }
 
-  #myBtn{
-    width: 45vmin;
-    border-radius: 3px;
-    background-color: grey;
-    border-radius: 5%;
-    overflow: hidden;
-    margin-left: 10%;
+.carousel{
+    height: auto;
+    width: 80%;
+    position: relative;
 }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 1vmin;
+.carousel .switchRight{
+    color: white;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
+    height: 100%;
+    width: 35px;
+    line-height: 250px;
+    font-size: 25px;
+    text-align: center;
+    background-color: none;
+    font-family: sans-serif;
+    top: 0;
+    z-index: 3;
+    user-select:none;
+
+}
+.carousel .switchLeft{
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    width: 35px;
+    line-height: 250px;
+    font-size: 25px;
+    text-align: center;
+    background-color: none;
+    font-family: sans-serif;
+    top: 0;
+    z-index: 3;
+    user-select:none;
+
+}
+.carousel .switchLeft{
+    position: absolute;
+    left: 35vh;
+    top: -5vh;
+    user-select:none;
+}
+.carousel .switchRight{
+    position: absolute;
+    right: -5vh;
+    top: -5vh;
+    user-select:none;
+}
+.carouselbox {
+
+    margin-left: 40vh;
+    height: 20vh;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px !important;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+.carouselbox img{
+
+    min-width: 20vh;
+    max-width: 20vh;
+    height: 18vh;
+    background-size: cover;
+    background-color: grey;
+    margin: 1vh;
     cursor: pointer;
-  }
+    transition: 0.5s ease;
+    z-index: 2;
+}
+.carouselbox img:hover{
+    transform: scale(1.17);
+    z-index: 5;
+}
+.action-h1{
+    font-size: 3vh;
+    margin-left: 40vh;
+    margin-right: 38.8vh;
+    padding: 1vh;
+    height: 4vh;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+    font-style: italic;
+}
+
+.action-carousel{
+    height: auto;
+    width: 80%;
+    position: relative;
+}
+.action-carousel .switchRight{
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    width: 35px;
+    line-height: 250px;
+    font-size: 25px;
+    text-align: center;
+    background-color: none;
+    font-family: sans-serif;
+    top: 0;
+    z-index: 3;
+    user-select:none;
+
+}
+.action-carousel .switchLeft{
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    width: 35px;
+    line-height: 250px;
+    font-size: 25px;
+    text-align: center;
+    background-color: none;
+    font-family: sans-serif;
+    top: 0;
+    z-index: 3;
+    user-select:none;
+
+}
+.action-carousel .switchLeft{
+    position: absolute;
+    left: 35vh;
+    top: -5vh;
+    user-select:none;
+}
+.action-carousel .switchRight{
+    position: absolute;
+    right: -5vh;
+    top: -5vh;
+    user-select:none;
+}
+.action-carouselbox {
+    margin-left: 40vh;
+    height: 20vh;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px !important;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+.action-carouselbox img{
+
+    min-width: 20vh;
+    max-width: 20vh;
+    height: 18vh;
+    background-size: cover;
+    background-color: grey;
+    margin: 1vh;
+    cursor: pointer;
+    transition: 0.5s ease;
+    z-index: 2;
+}
+.action-carouselbox img:hover{
+    transform: scale(1.25);
+    z-index: 5;
+}
+
+.animation-h1{
+    font-size: 3vh;
+    margin-left: 40vh;
+    margin-right: 38.8vh;
+    padding: 1vh;
+    height: 4vh;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+    font-style: italic;
+}
+
+.animation-carousel{
+    height: auto;
+    width: 80%;
+    position: relative;
+}
+.animation-carousel .switchRight{
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    width: 35px;
+    line-height: 250px;
+    font-size: 25px;
+    text-align: center;
+    background-color: none;
+    font-family: sans-serif;
+    top: 0;
+    z-index: 3;
+    user-select:none;
+
+}
+.animation-carousel .switchLeft{
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    width: 35px;
+    line-height: 250px;
+    font-size: 25px;
+    text-align: center;
+    background-color: none;
+    font-family: sans-serif;
+    top: 0;
+    z-index: 3;
+    user-select:none;
+
+}
+.animation-carousel .switchLeft{
+    position: absolute;
+    left: 35vh;
+    top: -5vh;
+    user-select:none;
+}
+.animation-carousel .switchRight{
+    position: absolute;
+    right: -5vh;
+    top: -5vh;
+    user-select:none;
+}
+.animation-carouselbox {
+    margin-left: 40vh;
+    height: 20vh;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px !important;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+.animation-carouselbox img{
+
+    min-width: 20vh;
+    max-width: 20vh;
+    height: 18vh;
+    background-size: cover;
+    background-color: grey;
+    margin: 1vh;
+    cursor: pointer;
+    transition: 0.5s ease;
+    z-index: 2;
+}
+.animation-carouselbox img:hover{
+    transform: scale(1.25);
+    z-index: 5; 
+}
+
+
+.drama-h1{
+    font-size: 3vh;
+    margin-left: 40vh;
+    margin-right: 38.8vh;
+    padding: 1vh;
+    height: 4vh;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+    font-style: italic;
+}
+
+.drama-carousel{
+    height: auto;
+    width: 80%;
+    position: relative;
+}
+.drama-carousel .switchRight{
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    width: 35px;
+    line-height: 250px;
+    font-size: 25px;
+    text-align: center;
+    background-color: none;
+    font-family: sans-serif;
+    top: 0;
+    z-index: 3;
+    user-select:none;
+
+}
+.drama-carousel .switchLeft{
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    width: 35px;
+    line-height: 250px;
+    font-size: 25px;
+    text-align: center;
+    background-color: none;
+    font-family: sans-serif;
+    top: 0;
+    z-index: 3;
+    user-select:none;
+
+}
+.drama-carousel .switchLeft{
+    position: absolute;
+    left: 35vh;
+    top: -5vh;
+    user-select:none;
+}
+.drama-carousel .switchRight{
+    position: absolute;
+    right: -5vh;
+    top: -5vh;
+    user-select:none;
+}
+.drama-carouselbox {
+    margin-left: 40vh;
+    height: 20vh;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px !important;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+.drama-carouselbox img{
+
+    min-width: 20vh;
+    max-width: 20vh;
+    height: 18vh;
+    background-size: cover;
+    background-color: grey;
+    margin: 1vh;
+    cursor: pointer;
+    transition: 0.5s ease;
+    z-index: 2;
+}
+.drama-carouselbox img:hover{
+    transform: scale(1.25);
+    z-index: 5; 
+}
