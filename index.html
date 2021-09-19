@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,540;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,540;1,600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -22,47 +23,67 @@
 
     <div>
         <h1 class="score-h1"> Best Score Movies</h1>
-    <div class="carousel">
-        <div class="carouselbox">
+        <div class="carousel">
+            <div class="carouselbox">
+            </div>
+            <a class="switchLeft sliderButton" onclick="sliderScrollLeft()"><i class="fa"
+                    style="font-size: 4vh;">&#xf100;</i></a>
+            <a class="switchRight sliderButton" onclick="sliderScrollRight()"><i class="fa"
+                    style="font-size: 4vh;">&#xf101;</i></a>
         </div>
-        <a class="switchLeft sliderButton" onclick="sliderScrollLeft()"><i class="fa" style="font-size: 4vh;">&#xf100;</i></a>
-        <a class="switchRight sliderButton" onclick="sliderScrollRight()"><i class="fa" style="font-size: 4vh;">&#xf101;</i></a>
-    </div>
 
     </div>
-    
+
     <div>
         <h1 class="action-h1">Action Movies</h1>
-    <div class="action-carousel">
-        <div class="action-carouselbox">
+        <div class="action-carousel">
+            <div class="action-carouselbox">
+            </div>
+            <a class="switchLeft sliderButton" onclick="ActionsliderScrollLeft()"><i class="fa"
+                    style="font-size: 4vh;">&#xf100;</i></a>
+            <a class="switchRight sliderButton" onclick="ActionsliderScrollRight()"><i class="fa"
+                    style="font-size: 4vh;">&#xf101;</i></a>
         </div>
-        <a class="switchLeft sliderButton" onclick="ActionsliderScrollLeft()"><i class="fa" style="font-size: 4vh;">&#xf100;</i></a>
-        <a class="switchRight sliderButton" onclick="ActionsliderScrollRight()"><i class="fa" style="font-size: 4vh;">&#xf101;</i></a>
-    </div>
-    
+
     </div>
 
     <div>
         <h1 class="animation-h1">Animation Movies</h1>
-    <div class="animation-carousel">
-        <div class="animation-carouselbox">
+        <div class="animation-carousel">
+            <div class="animation-carouselbox">
+            </div>
+            <a class="switchLeft sliderButton" onclick="AnimationsliderScrollLeft()"><i class="fa"
+                    style="font-size: 4vh;">&#xf100;</i></a>
+            <a class="switchRight sliderButton" onclick="AnimationsliderScrollRight()"><i class="fa"
+                    style="font-size: 4vh;">&#xf101;</i></a>
         </div>
-        <a class="switchLeft sliderButton" onclick="AnimationsliderScrollLeft()"><i class="fa" style="font-size: 4vh;">&#xf100;</i></a>
-        <a class="switchRight sliderButton" onclick="AnimationsliderScrollRight()"><i class="fa" style="font-size: 4vh;">&#xf101;</i></a>
-    </div>
-    
+
     </div>
 
     <div>
         <h1 class="drama-h1">Drama Movies</h1>
-    <div class="drama-carousel">
-        <div class="drama-carouselbox">
+        <div class="drama-carousel">
+            <div class="drama-carouselbox">
+            </div>
+            <a class="switchLeft sliderButton" onclick="DramasliderScrollLeft()"><i class="fa"
+                    style="font-size: 4vh;">&#xf100;</i></a>
+            <a class="switchRight sliderButton" onclick="DramasliderScrollRight()"><i class="fa"
+                    style="font-size: 4vh;">&#xf101;</i></a>
         </div>
-        <a class="switchLeft sliderButton" onclick="DramasliderScrollLeft()"><i class="fa" style="font-size: 4vh;">&#xf100;</i></a>
-        <a class="switchRight sliderButton" onclick="DramasliderScrollRight()"><i class="fa" style="font-size: 4vh;">&#xf101;</i></a>
+
     </div>
-    
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+            <p>Title : <span id="movieTitle"></span></p>
+            <!-- TODO: more files here ... -->
+        </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.js"></script>
     <script src="./script.js"></script>
 </body>

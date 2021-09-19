@@ -38,16 +38,17 @@ showAnimationMovieData()
 showDramaMovieData()
 showBestMovieData()
 
+var bestScoreRes = []
 
-async function showBestMovieData(){
+async function showBestMovieData() {
     var bestScoreOneRes = await axios.get(score_category[0])
     bestScoreRes = bestScoreOneRes.data.results.splice(0, 1)
     console.log(bestScoreRes)
-        
+
     bestScoreRes.map(function (cur, index) {
         bestMovie.insertAdjacentHTML(
             "beforeend",
-             `<img class="img-${index} slider-img" src="${cur.image_url}" />`
+            `<img class="img-${index} slider-img" src="${cur.image_url}" onclick="movieDetailsModal(bestScoreRes, ${index})" />`
         )
     })
 }
@@ -55,17 +56,20 @@ async function showBestMovieData(){
 // CREATE THE SCORE FUNCTION
 
 
-async function showScoreMovieData(){
-    
+// declare global movies collections here
+var scoreRes = [];
+
+async function showScoreMovieData() {
+
     var scoreOneRes = await axios.get(score_category[0])
     var scoreTwoRes = await axios.get(score_category[1])
-    scoreRes = scoreOneRes.data.results.concat(scoreTwoRes.data.results).splice(0,7)
+    scoreRes = scoreOneRes.data.results.concat(scoreTwoRes.data.results).splice(0, 7)
     console.log(scoreRes)
-    
+
     scoreRes.map(function (cur, index) {
         scoreSliders.insertAdjacentHTML(
             "beforeend",
-             `<img class="img-${index} slider-img" src="${cur.image_url}" />`
+            `<img class="img-${index} slider-img" src="${cur.image_url}" onclick="movieDetailsModal(scoreRes, ${index})" /> `
         )
     })
 
@@ -77,7 +81,7 @@ async function showScoreMovieData(){
 
 var scrollAmount = 0;
 
-function sliderScrollLeft(){
+function sliderScrollLeft() {
     scoreSliders.scrollTo({
         top: 0,
         left: (scrollAmount -= scrollPerClick),
@@ -85,33 +89,33 @@ function sliderScrollLeft(){
     });
 
     if (scrollAmount < 0) {
-        scrollAmount = 0;  
+        scrollAmount = 0;
     }
 }
-function sliderScrollRight(){
+
+function sliderScrollRight() {
     if (scrollAmount <= scoreSliders.scrollWidth - scoreSliders.clientWidth) {
         scoreSliders.scrollTo({
-            top:0,
+            top: 0,
             left: (scrollAmount += scrollPerClick),
-            behavior: "smooth",    
+            behavior: "smooth",
         });
     }
 }
 
+actionRes=[];
 
 // CREATE THE SCORE FUNCTION
+async function showActionMovieData() {
 
-
-async function showActionMovieData(){
-    
     var actionOneRes = await axios.get(action_category[0])
     var actionTwoRes = await axios.get(action_category[1])
-    actionRes =  actionOneRes.data.results.concat(actionTwoRes.data.results).splice(0,7)
-    
+    actionRes = actionOneRes.data.results.concat(actionTwoRes.data.results).splice(0, 7)
+
     actionRes.map(function (cur, index) {
         actionSliders.insertAdjacentHTML(
             "beforeend",
-             `<img class="img-${index} slider-img" src="${cur.image_url}" />`
+            `<img class="img-${index} slider-img" src="${cur.image_url}" onclick="movieDetailsModal(actionRes, ${index})" />`
         )
     })
 
@@ -120,10 +124,9 @@ async function showActionMovieData(){
 
 
 // CALL THE SCORE SLIDER BUTTON FUNCTION
-
 var actionScrollAmount = 0;
 
-function ActionsliderScrollLeft(){
+function ActionsliderScrollLeft() {
     actionSliders.scrollTo({
         top: 0,
         left: (actionScrollAmount -= scrollPerClick),
@@ -131,35 +134,33 @@ function ActionsliderScrollLeft(){
     });
 
     if (actionScrollAmount < 0) {
-        actionScrollAmount = 0;  
+        actionScrollAmount = 0;
     }
 }
-function ActionsliderScrollRight(){
+
+function ActionsliderScrollRight() {
     if (actionScrollAmount <= actionSliders.scrollWidth - actionSliders.clientWidth) {
         actionSliders.scrollTo({
-            top:0,
+            top: 0,
             left: (actionScrollAmount += scrollPerClick),
-            behavior: "smooth",    
+            behavior: "smooth",
         });
     }
 }
 
 
-
+animationRes = []
 // CREATE ANIMATION 
+async function showAnimationMovieData() {
 
-
-
-async function showAnimationMovieData(){
-    
     var animationOneRes = await axios.get(animation_category[0])
     var animationTwoRes = await axios.get(animation_category[1])
-    animationRes =  animationOneRes.data.results.concat(animationTwoRes.data.results).splice(0,7)
-    
+    animationRes = animationOneRes.data.results.concat(animationTwoRes.data.results).splice(0, 7)
+
     animationRes.map(function (cur, index) {
         animationSliders.insertAdjacentHTML(
             "beforeend",
-             `<img class="img-${index} slider-img" src="${cur.image_url}" />`
+            `<img class="img-${index} slider-img" src="${cur.image_url}"onclick="movieDetailsModal(animationRes, ${index})" />`
         )
     })
 
@@ -168,10 +169,9 @@ async function showAnimationMovieData(){
 
 
 // CALL THE SCORE SLIDER BUTTON FUNCTION
-
 var animationScrollAmount = 0;
 
-function AnimationsliderScrollLeft(){
+function AnimationsliderScrollLeft() {
     animationSliders.scrollTo({
         top: 0,
         left: (animationScrollAmount -= scrollPerClick),
@@ -179,15 +179,16 @@ function AnimationsliderScrollLeft(){
     });
 
     if (animationScrollAmount < 0) {
-        animationScrollAmount = 0;  
+        animationScrollAmount = 0;
     }
 }
-function AnimationsliderScrollRight(){
+
+function AnimationsliderScrollRight() {
     if (animationScrollAmount <= animationSliders.scrollWidth - animationSliders.clientWidth) {
         animationSliders.scrollTo({
-            top:0,
+            top: 0,
             left: (animationScrollAmount += scrollPerClick),
-            behavior: "smooth",    
+            behavior: "smooth",
         });
     }
 }
@@ -196,17 +197,18 @@ function AnimationsliderScrollRight(){
 // CREATE DRAMA CATEGORY CAROUSEL
 
 
+dramaRes = [];
 
-async function showDramaMovieData(){
-    
+async function showDramaMovieData() {
+
     var dramaOneRes = await axios.get(drama_category[0])
     var dramaTwoRes = await axios.get(drama_category[1])
-    dramaRes =  dramaOneRes.data.results.concat(dramaTwoRes.data.results).splice(0,7)
-    
+    dramaRes = dramaOneRes.data.results.concat(dramaTwoRes.data.results).splice(0, 7)
+
     dramaRes.map(function (cur, index) {
         dramaSliders.insertAdjacentHTML(
             "beforeend",
-             `<img class="img-${index} slider-img" src="${cur.image_url}" />`
+            `<img class="img-${index} slider-img" src="${cur.image_url}"onclick="movieDetailsModal(dramaRes, ${index})" />`
         )
     })
 
@@ -215,10 +217,9 @@ async function showDramaMovieData(){
 
 
 // CALL THE SCORE SLIDER BUTTON FUNCTION
-
 var dramaScrollAmount = 0;
 
-function DramasliderScrollLeft(){
+function DramasliderScrollLeft() {
     dramaSliders.scrollTo({
         top: 0,
         left: (dramaScrollAmount -= scrollPerClick),
@@ -226,15 +227,42 @@ function DramasliderScrollLeft(){
     });
 
     if (dramaScrollAmount < 0) {
-        dramaScrollAmount = 0;  
+        dramaScrollAmount = 0;
     }
 }
-function DramasliderScrollRight(){
+
+function DramasliderScrollRight() {
     if (dramaScrollAmount <= dramaSliders.scrollWidth - dramaSliders.clientWidth) {
         dramaSliders.scrollTo({
-            top:0,
+            top: 0,
             left: (dramaScrollAmount += scrollPerClick),
-            behavior: "smooth",    
+            behavior: "smooth",
         });
+    }
+}
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+var moveTitle = document.getElementById("movieTitle");
+
+
+//TODO: more files here ...
+function movieDetailsModal(movies, index) {
+    //alert('Detail modal ...')
+    const movie = movies[index]
+    console.log(movie)
+
+    moveTitle.textContent = movie.title
+    //TODO: more files here ...
+
+    modal.style.display = "block";
+}
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
 }
