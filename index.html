@@ -26,9 +26,9 @@
         <div class="carousel">
             <div class="carouselbox">
             </div>
-            <a class="switchLeft sliderButton" onclick="sliderScrollLeft()"><i class="fa"
+            <a class="switchLeft sliderButton" onclick="sliderScrollLeft(scoreSliders, 0)"><i class="fa"
                     style="font-size: 4vh;">&#xf100;</i></a>
-            <a class="switchRight sliderButton" onclick="sliderScrollRight()"><i class="fa"
+            <a class="switchRight sliderButton" onclick="sliderScrollRight(scoreSliders, 0)"><i class="fa"
                     style="font-size: 4vh;">&#xf101;</i></a>
         </div>
 
@@ -39,9 +39,9 @@
         <div class="action-carousel">
             <div class="action-carouselbox">
             </div>
-            <a class="switchLeft sliderButton" onclick="ActionsliderScrollLeft()"><i class="fa"
+            <a class="switchLeft sliderButton" onclick="sliderScrollLeft(actionSliders, 0)"><i class="fa"
                     style="font-size: 4vh;">&#xf100;</i></a>
-            <a class="switchRight sliderButton" onclick="ActionsliderScrollRight()"><i class="fa"
+            <a class="switchRight sliderButton" onclick="sliderScrollRight(actionSliders, 0)"><i class="fa"
                     style="font-size: 4vh;">&#xf101;</i></a>
         </div>
 
@@ -52,9 +52,9 @@
         <div class="animation-carousel">
             <div class="animation-carouselbox">
             </div>
-            <a class="switchLeft sliderButton" onclick="AnimationsliderScrollLeft()"><i class="fa"
+            <a class="switchLeft sliderButton" onclick="sliderScrollLeft(animationSliders, 0)"><i class="fa"
                     style="font-size: 4vh;">&#xf100;</i></a>
-            <a class="switchRight sliderButton" onclick="AnimationsliderScrollRight()"><i class="fa"
+            <a class="switchRight sliderButton" onclick="sliderScrollRight(animationSliders, 0)"><i class="fa"
                     style="font-size: 4vh;">&#xf101;</i></a>
         </div>
 
@@ -65,9 +65,9 @@
         <div class="drama-carousel">
             <div class="drama-carouselbox">
             </div>
-            <a class="switchLeft sliderButton" onclick="DramasliderScrollLeft()"><i class="fa"
+            <a class="switchLeft sliderButton" onclick="sliderScrollLeft(dramaSliders, 0)"><i class="fa"
                     style="font-size: 4vh;">&#xf100;</i></a>
-            <a class="switchRight sliderButton" onclick="DramasliderScrollRight()"><i class="fa"
+            <a class="switchRight sliderButton" onclick="sliderScrollRight(dramaSliders, 0)"><i class="fa"
                     style="font-size: 4vh;">&#xf101;</i></a>
         </div>
 
@@ -78,9 +78,17 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
-            <p>Title : <span id="movieTitle"></span></p>
-            <!-- TODO: more files here ... -->
+            <p>Title : <b><span id="movieTitle"></span></p></b><br>
+            <p>Genre : <span id="movieGenre"></span></p><br>
+            <p>Year : <span id="movieYear"></span></p><br>
+            <p>Score : <span id="movieScore"></span></p><br>
+            <p>Director : <span id="movieDirector"></span></p><br>
+            <p>Actors : <span id="movieActors"></span></p><br>
+            <!-- <p>Rated : <span id="movieRated"></span></p> -->
+            <!-- <p>Length : <span id="movieLength"></span></p> -->
+            <!-- <p>Country : <span id="movieCountry"></span></p> -->
+            <!-- <p>Money : <span id="movieMoney"></span></p> -->
+            <!-- <p>Storyline : <span id="movieStoryline"></span></p> -->
         </div>
     </div>
 
