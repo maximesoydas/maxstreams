@@ -438,12 +438,16 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #333;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+  font-size: 1.2vh;
+  width: 40%;
+  height: 59%;
   z-index: 8;
+  
 }
 
 /* The Close Button */
