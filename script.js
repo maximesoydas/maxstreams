@@ -42,7 +42,7 @@ ShowCategoryData(score_category, bestMovie, 1);
 var ImagePadding = 300;
 
 // CALLS EACH MOVIE OF A GIVEN CATEGORY AND RETURNS EACH COVER PICTURE TO ITS CAROUSEL
-// ALSO ADDS ONCLICK FUNCTION ON COVER PICTURE WHICH CALLS A MODAL CONTAINING THE MOVIE DATA
+// ALSO CALLS GETMOVIEDATA FUNCTION 
 
 async function ShowCategoryData(category,div,num_movies) {
     // USE AXIOS TO 'FETCH' DATE FROM TWO URLS
@@ -64,13 +64,14 @@ async function ShowCategoryData(category,div,num_movies) {
     scrollPerClick = document.querySelector('.img-1').clientWidth + ImagePadding;
 } 
 
+// ONCLICK FUNCTION ON COVER PICTURE WHICH CALLS A MODAL CONTAINING THE MOVIE DATA
 async function getMovieData(url_movie,div,index){
 
     var movie = await axios.get(url_movie)
-    console.log(movie.data)
     let selector = `.img-${index}`
-    // console.log(selector)
     let movieImage = div.querySelector(selector)
+
+    // WHEN CLICK ON IMAGE CALL MODAL FUNCTION WITH MOVIE DATA
     movieImage.addEventListener("click", function(){
         movieDetailsModal(movie.data)
     });
@@ -103,7 +104,7 @@ function sliderScrollRight(div,scrollAmount) {
 }    
 
 
-// GET MODAL
+// GET MODAL HTML ELEMENTS READY FOR THE MODAL FUNCTION
 var modal = document.getElementById("myModal");
 var moveTitle = document.getElementById("movieTitle");
 var moveGenre = document.getElementById("movieGenre");
@@ -111,20 +112,15 @@ var moveYear = document.getElementById("movieYear");
 var moveScore = document.getElementById("movieScore");
 var moveDirector = document.getElementById("movieDirector");
 var moveActors = document.getElementById("movieActors");
-
 var moveRated = document.getElementById("movieRated");
 var moveLength = document.getElementById("movieLength");
 var moveCountry = document.getElementById("movieCountry");
 var moveMoney = document.getElementById("movieMoney");
 var moveStoryline = document.getElementById("movieStoryline");
 var moveImage = document.getElementById('movieImage')
-// class=ipc-overflowText ipc-overflowText--pageSection ipc-overflowText--height-long ipc-overflowText--long ipc-overflowText--base
 
 
 function movieDetailsModal(movie) {
-    //alert('Detail modal ...')
-    console.log(movie)
-    console.log(moveTitle)
 
     moveTitle.textContent = movie.title
     moveGenre.textContent = movie.genres
