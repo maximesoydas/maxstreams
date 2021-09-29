@@ -88,6 +88,7 @@ h1{
     top: 0;
     z-index: 3;
     user-select:none;
+    cursor: pointer;
 
 }
 .carousel .switchLeft{
@@ -103,6 +104,7 @@ h1{
     top: 0;
     z-index: 3;
     user-select:none;
+    cursor: pointer
 
 }
 .carousel .switchLeft{
@@ -177,6 +179,7 @@ h1{
     top: 0;
     z-index: 3;
     user-select:none;
+    cursor: pointer;
 
 }
 .action-carousel .switchLeft{
@@ -192,6 +195,7 @@ h1{
     top: 0;
     z-index: 3;
     user-select:none;
+    cursor: pointer;
 
 }
 .action-carousel .switchLeft{
@@ -266,6 +270,7 @@ h1{
     top: 0;
     z-index: 3;
     user-select:none;
+    cursor: pointer;
 
 }
 .animation-carousel .switchLeft{
@@ -281,6 +286,7 @@ h1{
     top: 0;
     z-index: 3;
     user-select:none;
+    cursor: pointer;
 
 }
 .animation-carousel .switchLeft{
@@ -356,6 +362,7 @@ h1{
     top: 0;
     z-index: 3;
     user-select:none;
+    cursor: pointer;
 
 }
 .drama-carousel .switchLeft{
@@ -371,6 +378,7 @@ h1{
     top: 0;
     z-index: 3;
     user-select:none;
+    cursor: pointer;
 
 }
 .drama-carousel .switchLeft{
@@ -445,9 +453,13 @@ body {font-family: Arial, Helvetica, sans-serif;}
   color: whitesmoke;
   font-size: 1.2vh;
   width: 40%;
-  height: 59%;
+  height: auto;
   z-index: 8;
   
+}
+
+.center_paragraph {
+    text-align: center;
 }
 
 /* The Close Button */
